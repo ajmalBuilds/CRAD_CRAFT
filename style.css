@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-;
+}
+@font-face{
+    font-family: zoha;
+    src: url(fonts/Soulwave.ttf);
+}
+@font-face{
+    font-family: hello;
+    src: url(fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf)
+}
+.menu-icon{
+    width: 30px;
+    height: 35px;
+    margin-left: 25px;
+}
+.menu-icon span {
+    display: block;
+    height: 3.5px; 
+    width: 30px; 
+    background-color: #000; 
+    margin: 6px 0;
+    border-radius: 4px;
+}
+.menu-icon span:last-child {
+    width: 20px; 
+}
+.logo{
+    width: 170px;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+    box-sizing: border-box;
+    padding: 20px;
+}
+.logo h1{
+    font-family: hello, monospace;
+    font-weight: 500;
+    font-size: 30px;
+    transform: rotateZ(-3deg);
+    transform-origin: top left;
+}
+.search-btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.search-btn svg{
+    width: 25px;
+    height: 25px;
+}
+.sign-up{
+    width: 100px;
+    height: 45px;
+    margin-left: 20px;
+}
+.sign-up-btn{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 19px;
+}
+.header{
+    width: 100vw;
+    height: 80px;
+    background: linear-gradient(to right,#E7F8FF, #ECDDFA);
+}
+main{
+    width: 100vw;
+    height: ;
+    margin-top: ;
+    overflow-y: auto;
+    white-space: nowrap;
+    overflow: visible;
+}
+.main-wrapper{
+    width: 100vw;
+    height: ;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: visible;
+}
+form{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    background: #fff;
+}
+#input-box{
+    width: 85%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+    font-size: 20px;
+}
+#submit-btn{
+    width: 25%;
+    height: 70%;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border: none;
+    background: transparent;
+    border-left: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+    transition: background 0.3s ease-in;
+}
+.crud-container{
+    width: 90vw;
+    min-height: 400px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+}
+.card-input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+    font-size: 20px;
+    
+}
+.card-text{
+    width: 60%;
+    height: 100%;
+    background: transparent;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.remove-btn{
+    width: 25%;
+    height: 100%;
+    border: none;
+    background: transparent;
+   
+    font-size: 20px;
+    font-weight: 600;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    user-select: none;
+    transition: background 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.edit-btn{
+    width: 15%;
+    height: 100%;
+    border: none;
+    background: transparent;
+  
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+    transition: background 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.add-edits{
+    width: 15%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+    transition: background 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+.edit-btn:hover,
+.edit-btn:active,
+.add-edits:hover,
+.add-edits:active{
+    background: #FFE694;
+    color: #fff;
+}
+
+.remove-btn:hover,
+.remove-btn:active{
+    background: #FF5159;
+}
+
+footer{
+    width: 100vw;
+    height: 300px;
+    text-align: center;
+}
+footer h1{
+    font-family: hello;
+    font-weight: 500;
+    font-size: 30px;
+    transform: rotateZ(-3deg);
+    transform-origin: top left;
+}
