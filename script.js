@@ -107,5 +107,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     loadCardData();
+    
+    
+    
+    const menu = document.querySelector('.menu-icon');
+    const sideNav = document.querySelector('.sidenav');
+    const overlay = document.getElementById("overlay");
+    let isOpen = false;
+    
+    menu.addEventListener('click', () => {
+        if(!isOpen) {
+          document.getElementById("sidenav").classList.add('sidenav-visible');
+          document.getElementById("sidenav").classList.remove('sidenav-hidden');
+          document.getElementById("overlay").style.display = 'block';
+          document.getElementById("overlay").style.opacity = '1';
+          document.querySelector('body').classList.add('no-scroll');
+          document.querySelector('body').classList.remove('can-scroll');
+          isOpen = true;
+        }
+        else{
+          document.getElementById("sidenav").classList.add('sidenav-hidden');
+          document.getElementById("sidenav").classList.remove('sidenav-visible');
+          document.getElementById("overlay").style.display = 'none';
+          document.getElementById("overlay").style.opacity = '0';
+          document.querySelector('body').classList.add('can-scroll');
+          document.querySelector('body').classList.remove('no-scroll');
+          isOpen = false;
+        }
+    });
+    
+    overlay.addEventListener('click', () => {
+        document.getElementById("sidenav").classList.add('sidenav-hidden');
+          document.getElementById("sidenav").classList.remove('sidenav-visible');
+          document.getElementById("overlay").style.display = 'none';
+          document.getElementById("overlay").style.opacity = '0';
+          document.querySelector('body').classList.add('can-scroll');
+          document.querySelector('body').classList.remove('no-scroll');
+          isOpen = false;
+    });
+    
+    
 });
-
