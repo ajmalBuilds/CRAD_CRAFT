@@ -5,6 +5,9 @@ const inputBox = document.getElementById('input-box');
 function submitInput(event) {
     event.preventDefault();
     let inputValue = inputBox.value;
+    if(inputValue.trim()==="") {
+        return;
+    }
     /* creating card*/
     let card = document.createElement("div");
     card.classList.add('card');
@@ -27,6 +30,7 @@ function submitInput(event) {
         let tempText = cardText.textContent;
         if(cardEdit) {
             let insertInput = document.createElement('input');
+            insertInput.focus();
             insertInput.classList.add('card-input');
             insertInput.value = cardText.textContent;
             let cardTextTemp = cardText.textContent
@@ -38,6 +42,7 @@ function submitInput(event) {
             addEdits.style.order = 2;
             card.append(addEdits);
             cardText.append(insertInput);
+            
             
             
             function addNewVal() {

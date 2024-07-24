@@ -12,42 +12,43 @@ nav{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
-    justify-content: space-;
+    justify-content: space-between; 
 }
 @font-face{
-    font-family: zoha;
-    src: url(fonts/Soulwave.ttf);
+    font-family: AnandaBlack;
+    src: url(fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
 }
 @font-face{
-    font-family: hello;
-    src: url(fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf)
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf)
 }
 .menu-icon{
     width: 30px;
     height: 35px;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 .menu-icon span {
     display: block;
     height: 3.5px; 
     width: 30px; 
     background-color: #000; 
-    margin: 6px 0;
+    margin: 5px 0;
     border-radius: 4px;
 }
 .menu-icon span:last-child {
     width: 20px; 
 }
 .logo{
-    width: 170px;
+    width: 190px; 
     height: 100%;
     display: flex;
     align-items: center;    
+    justify-content: center;
     box-sizing: border-box;
     padding: 20px;
 }
 .logo h1{
-    font-family: hello, monospace;
+    font-family: AnandaBlack;
     font-weight: 500;
     font-size: 30px;
     transform: rotateZ(-3deg);
@@ -70,7 +71,7 @@ nav{
 .sign-up{
     width: 100px;
     height: 45px;
-    margin-left: 20px;
+    margin: 0 20px 0 20px;
 }
 .sign-up-btn{
     width: 100%;
@@ -89,7 +90,7 @@ nav{
 }
 main{
     width: 100vw;
-    height: ;
+    min-height: 1650px;
     margin-top: ;
     overflow-y: auto;
     white-space: nowrap;
@@ -125,8 +126,9 @@ form{
     border: none;
     outline: none;
     box-sizing: border-box;
-    padding-left: 5px;
+    padding-left: 15px;
     font-size: 20px;
+    font-family: Poppins, Arial, sans-serif;
 }
 #submit-btn{
     width: 25%;
@@ -140,10 +142,12 @@ form{
     font-weight: 600;
     user-select: none;
     transition: background 0.3s ease-in;
+    font-weight: 700;
+    font-family: Poppins, Arial, sans-serif;
 }
 .crud-container{
     width: 90vw;
-    min-height: 400px;
+    min-height: 1100px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -168,7 +172,8 @@ form{
     box-sizing: border-box;
     padding-left: 5px;
     font-size: 20px;
-    
+    font-family: Poppins, Arial, sans-serif;
+    font-family: 400;
 }
 .card-text{
     width: 60%;
@@ -179,16 +184,17 @@ form{
     padding-left: 15px;
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: Poppins, Arial, sans-serif;
 }
 .remove-btn{
     width: 25%;
     height: 100%;
     border: none;
     background: transparent;
-   
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: Poppins, Arial, sans-serif;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     user-select: none;
@@ -204,9 +210,8 @@ form{
     height: 100%;
     border: none;
     background: transparent;
-  
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     user-select: none;
     transition: background 0.3s ease-in;
     display: flex;
@@ -214,6 +219,8 @@ form{
     align-items: center;
     word-wrap: break-word;
     white-space: normal;
+    font-weight: 600;
+    font-family: Poppins, Arial, sans-serif;
 }
 .add-edits{
     width: 15%;
@@ -221,7 +228,8 @@ form{
     border: none;
     background: transparent;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: Poppins, Arial, sans-serif;
     user-select: none;
     transition: background 0.3s ease-in;
     display: flex;
@@ -249,11 +257,67 @@ footer{
     width: 100vw;
     height: 300px;
     text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 footer h1{
-    font-family: hello;
+    font-family: AnandaBlack;
     font-weight: 500;
     font-size: 30px;
+    margin-top: 20px;
     transform: rotateZ(-3deg);
     transform-origin: top left;
+}
+footer .footer-links{
+    width: 85%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+}
+.footer-links li{
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins, Arial, sans-serif;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #000;
+}
+.plugins{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plugins a{
+    text-decoration: none;
+    color: #000;
+}
+.plugins i{
+    font-size: 1.5rem;
+}
+.copyrights{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.copyrights p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins, Arial, sans-serif;
+    color: #000;
+    opacity: 0.5;
 }
