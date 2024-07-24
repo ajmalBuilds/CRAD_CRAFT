@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
          
-         return; // Prevent adding empty cards 
+         return; // Prevent adding empty cards
         }
         addCard(inputValue);
         saveCardData();
